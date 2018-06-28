@@ -1,0 +1,46 @@
+/* Add here all your CSS customizations */
+.body-sign .panel-sign .panel-body{
+	border-top-color:#d21b30;
+}
+body{
+	text-transform: none;
+}
+.btn_red{
+	background:#d21b30!important;
+	border:none!important;
+	color:#fff!important;
+}
+.force_fullwidth{
+	width:100%;
+}
+.color_red{
+	color:#d21b30!important;
+}
+
+.header .toggle-sidebar-left,
+.thumb-info .thumb-info-type,
+.progress-bar,
+.social-icons-list a,
+.label-primary,
+body .btn-primary,
+.timeline.timeline-simple .tm-body .tm-items > li:before
+{
+	background:#d21b30!important;
+}
+
+html.sidebar-light:not(.dark) ul.nav-main > li.nav-active > a,
+ul.nav-main li .nav-children li.nav-active > a
+{
+	color:#d21b30;
+}
+
+.page-header h2{
+	border-bottom-color:#d21b30;
+}
+
+.header-right{
+	display:none;
+}
+.timeline.timeline-simple .tm-body .tm-items > li:before{
+	box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #d21b30;
+}
