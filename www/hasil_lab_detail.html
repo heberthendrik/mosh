@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="has-tab-navigation sidebar-light">
+	<head>
+		<!-- Basic -->
+		<meta charset="UTF-8">
+		<title>Hasil Lab Detail</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="MASTER/vendor/animate/animate.css">
+		<link rel="stylesheet" href="MASTER/vendor/font-awesome/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="MASTER/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="MASTER/vendor/jquery-ui/jquery-ui.css" />
+		<link rel="stylesheet" href="MASTER/vendor/jquery-ui/jquery-ui.theme.css" />
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+		<link rel="stylesheet" href="MASTER/vendor/morris/morris.css" />
+		<link rel="stylesheet" href="MASTER/vendor/select2/css/select2.css" />
+		<link rel="stylesheet" href="MASTER/vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />
+		<link rel="stylesheet" href="MASTER/vendor/datatables/media/css/dataTables.bootstrap4.css" />
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="MASTER/css/theme.css" />
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="MASTER/css/skins/default.css" />
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="MASTER/css/custom.css">
+		<!-- Head Libs -->
+		<script src="MASTER/vendor/modernizr/modernizr.js"></script>
+		<style>
+			div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+			justify-content:center;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="body">
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="#" class="logo">
+					<img src="media_library/logo_top.png" width="120" height="35" alt="Porto Admin" />
+					</a>
+					<div class="d-md-none toggle-menu" data-toggle="collapse" data-target=".tab-navigation">
+						<i class="fas fa-bars" aria-label="Toggle Menu"></i>
+					</div>
+				</div>
+				<!-- start: search & user box -->
+				<div class="header-right">
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group">
+							<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+							<span class="input-group-append">
+							<button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+					<span class="separator"></span>
+					<ul class="notifications">
+						<li>
+							<a href="#modalAnim" class="modal-with-zoom-anim ws-normal dropdown-toggle notification-icon" data-toggle="dropdown">
+							<i class="fas fa-chart-line"></i>
+							</a>
+							<!-- Modal Primary -->
+							<div id="modalAnim" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
+								<section class="card">
+									<header class="card-header" style="background:#dc1b30;">
+										<h2 class="card-title" style="color:#fff">Pilih Data Report</h2>
+									</header>
+									<div class="card-body">
+										<div class="modal-wrapper">
+											<div class="modal-text">
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='hasil_lab.html'">Hasil Lab</button>
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='rekaptulasi.html'">Rekaptulasi</button>
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='kunjungan_per_ruang.html'">Kunjungan Per Ruang</button>
+											</div>
+										</div>
+									</div>
+									<footer class="card-footer">
+										<div class="row">
+											<div class="col-md-12 text-right">
+												<button class="btn btn-primary modal-dismiss" style="width:100%;border:none;">Kembali</button>
+											</div>
+										</div>
+									</footer>
+								</section>
+							</div>
+						</li>
+						<li>
+							<a href="master_ruang.html" class="dropdown-toggle notification-icon">
+								<i class="fas fa-bars"></i>
+							</a>
+						</li>
+						<li>
+							<a href="dashboard.html" class="dropdown-toggle notification-icon">
+								<i class="fas fa-chart-pie"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fas fa-bell"></i>
+							</a>
+						</li>
+					</ul>
+					<span class="separator"></span>
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="MASTER/img/!logged-user.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="MASTER/img/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name">Hebert Hendrik</span>
+								<span class="role">administrator</span>
+							</div>
+							<i class="fa custom-caret"></i>
+						</a>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled mb-2">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="my_profile.html"><i class="fas fa-user"></i> My Profile</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="logout.html"><i class="fas fa-power-off"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<div class="tab-navigation collapse">
+					<nav>
+						<ul class="nav nav-pills">
+							<li class="nav-active">
+								<a class="nav-link" href="dashboard.html" style="color:#fff;">
+								<i class="fas fa-home" aria-hidden="true"></i>Dashboard
+								</a>    
+							</li>
+							<li>
+								<a class="nav-link" href="hasil_lab.html" style="color:#fff;">
+								<i class="fas fa-chart-pie" aria-hidden="true"></i>Hasil Lab
+								</a>    
+							</li>
+							<li class="dropdown">
+								<a class="nav-link dropdown-toggle" style="color:#fff;">
+								<i class="fas fa-tasks" aria-hidden="true"></i>Report
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a class="nav-link" href="rekaptulasi.html">Rekaptulasi</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link" href="kunjungan_per_ruang.html">Kunjungan per Ruang</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="nav-link dropdown-toggle" style="color:#fff;"><i class="fas fa-copy" aria-hidden="true"></i>Admin Panel</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_ruang.html">Ruang</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_kelas.html">Kelas</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_status.html">Status</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_dokter.html">Dokter</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_petugas.html">Petugas</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_barang.html">Barang</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_pasien.html">Pasien</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_kodelab.html">Kode Lab</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_rumahsakit.html">Rumah Sakit</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_user.html">User</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_slider.html">Slider</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end: sidebar -->
+				<section class="card card-featured-left card-featured-primary mb-4">
+					<div class="card-body">
+						<div class="widget-summary">
+							<div class="widget-summary-col widget-summary-col-icon">
+								<div class="summary-icon bg-primary">
+									<i class="fas fa-life-ring"></i>
+								</div>
+							</div>
+							<div class="widget-summary-col">
+								<div class="summary text-center">
+									<h4 class="title">1803120001</h4>
+									<div class="info">
+										<strong class="amount">Zulkifli</strong>
+									</div>
+								</div>
+								<div class="summary-footer">
+									<div style="font-size:0;position:relative;width:90px;height:30px;margin:0 auto;">
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:0px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:3px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:3px;height:30px;position:absolute;left:6px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:11px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:3px;height:30px;position:absolute;left:15px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:20px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:22px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:25px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:28px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:33px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:35px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:3px;height:30px;position:absolute;left:39px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:44px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:47px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:51px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:55px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:59px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:62px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:66px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:71px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:73px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:77px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:3px;height:30px;position:absolute;left:82px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:1px;height:30px;position:absolute;left:86px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:2px;height:30px;position:absolute;left:88px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:0px;height:30px;position:absolute;left:90px;top:0px;">&nbsp;</div>
+										<div style="background-color:black;width:0px;height:30px;position:absolute;left:90px;top:0px;">&nbsp;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section role="main" class="content-body tab-menu-opened" style="padding:0;">
+					<!-- start: page -->
+					<div class="row">
+						<div class="col">
+							<section class="card">
+								<div class="card-body">
+									<table class="table table-striped table-responsive">
+										<tbody>
+											<tr>
+												<th>Tanggal</th>
+												<td>                12 March 2018
+												</td>
+											</tr>
+											<tr>
+												<th>No. Lab</th>
+												<td>1803120001</td>
+											</tr>
+											<tr>
+												<th>Status</th>
+												<td>Pribadi             </td>
+											</tr>
+											<tr>
+												<th>No. Rekam Medis</th>
+												<td >727066012 </td>
+											</tr>
+											<tr>
+												<th>Dokter Pengirim</th>
+												<td>dr. Nazwan Hassa, Sp. S</td>
+											</tr>
+											<tr>
+												<th>Nama</th>
+												<td >Zulkifli</td>
+											</tr>
+											<tr>
+												<th>Alamat Dokter</th>
+												<td></td>
+											</tr>
+											<tr>
+												<th>Tanggal Lahir</th>
+												<td >                03 November 1991
+												</td>
+											</tr>
+											<tr>
+												<th>Ket Klinik</th>
+												<td></td>
+											</tr>
+											<tr>
+												<th>Umur</th>
+												<td >26.00 Tahun
+												</td>
+											</tr>
+											<tr>
+												<th>Catatan 1</th>
+												<td></td>
+											</tr>
+											<tr>
+												<th>Alamat</th>
+												<td >Jl. Sutera Feronia Park Utama No. 25 Tangerang Selatan                                              </td>
+											</tr>
+											<tr>
+												<th>Catatan 2</th>
+												<td></td>
+											</tr>
+											<tr>
+												<th>Ruang</th>
+												<td >MARWAH</td>
+											</tr>
+											<tr>
+												<th>Dokter ACC</th>
+												<td>Dokter Bumi Ayu</td>
+											</tr>
+											<tr>
+												<th>Kelas</th>
+												<td ></td>
+											</tr>
+											<tr>
+												<th>Pemeriksa</th>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</div>
+					</div>
+					<!-- end: page -->
+				</section>
+				<section role="main" class="content-body tab-menu-opened" style="padding:0;margin-top:25px;">
+					<!-- start: page -->
+					<div class="row">
+						<div class="col">
+							<section class="card">
+								<div class="card-body">
+									<table class="table table-no-more table-bordered table-striped mb-0">
+										<thead>
+											<tr>
+												<th class="text-right">Pemeriksaan</th>
+												<th class="text-right">Hasil</th>
+												<th class="text-right">N Rujukan</th>
+												<th class="text-right">Satuan</th>
+												<th class="text-right">Opsi</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Hemoglobin                                                                                          
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>14.9</b></td>
+												<td data-title="N Rujukan" class="text-right">11.5-16.5</td>
+												<td data-title="Satuan" class="text-right">g/dL</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													RDW-CV                                                                                              
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>16.4</b></td>
+												<td data-title="N Rujukan" class="text-right">11.0-16.0</td>
+												<td data-title="Satuan" class="text-right">%</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Eritrosit                                                                                           
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>4.73</b></td>
+												<td data-title="N Rujukan" class="text-right">3.50-5.50</td>
+												<td data-title="Satuan" class="text-right">10*12/L</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Trombosit                                                                                           
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>214</b></td>
+												<td data-title="N Rujukan" class="text-right">130-400</td>
+												<td data-title="Satuan" class="text-right">10*9/L</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													MPV                                                                                                 
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>9.6</b></td>
+												<td data-title="N Rujukan" class="text-right">6.5-11.0</td>
+												<td data-title="Satuan" class="text-right">fL</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													PDW                                                                                                 
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>51.8</b></td>
+												<td data-title="N Rujukan" class="text-right">0.1-99.9</td>
+												<td data-title="Satuan" class="text-right">%</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													P - LCR                                                                                             
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>27.1</b></td>
+												<td data-title="N Rujukan" class="text-right">0.1-99.9</td>
+												<td data-title="Satuan" class="text-right">%</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													RDW-SD                                                                                              
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>87.0</b></td>
+												<td data-title="N Rujukan" class="text-right">0.1-250.0</td>
+												<td data-title="Satuan" class="text-right">fL</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Limfosit%                                                                                           
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>34.8</b></td>
+												<td data-title="N Rujukan" class="text-right">15.0-50.0</td>
+												<td data-title="Satuan" class="text-right">%</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Limfosit#                                                                                           
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>2.3</b></td>
+												<td data-title="N Rujukan" class="text-right">0.9-5.0</td>
+												<td data-title="Satuan" class="text-right">10*9/L</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													MCV                                                                                                 
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>113.9</b></td>
+												<td data-title="N Rujukan" class="text-right">75.0-100.0</td>
+												<td data-title="Satuan" class="text-right">fL</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													MCH                                                                                                 
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>31.6</b></td>
+												<td data-title="N Rujukan" class="text-right">25.0-35.0</td>
+												<td data-title="Satuan" class="text-right">pg</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													MCHC                                                                                                
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>27.7</b></td>
+												<td data-title="N Rujukan" class="text-right">31.0-38.0</td>
+												<td data-title="Satuan" class="text-right">g/dL</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Hematokrit                                                                                          
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>53.9</b></td>
+												<td data-title="N Rujukan" class="text-right">35.0-55.0</td>
+												<td data-title="Satuan" class="text-right">%</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													Leukosit                                                                                            
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>6.6</b></td>
+												<td data-title="N Rujukan" class="text-right">3.5-10.0</td>
+												<td data-title="Satuan" class="text-right">10*9/L</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+											<tr>
+												<td data-title="Pemeriksaan" class="text-right">
+													PCT                                                                                                 
+												</td>
+												<td data-title="Hasil" class="text-right" style="color:green;"><b>0.20</b></td>
+												<td data-title="N Rujukan" class="text-right">0.01-9.99</td>
+												<td data-title="Satuan" class="text-right">%</td>
+												<td data-title="Opsi" class="text-right">&nbsp;
+												</td>
+											</tr>
+										</tbody>
+										<tbody>
+											<tr>
+												<td data-title="Code" class="text-right">AAC</td>
+												<td data-title="Company" class="text-right">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+												<td data-title="Price" class="text-right">$1.38</td>
+												<td data-title="Change" class="text-right ">-0.01</td>
+												<td data-title="Change %" class="text-right">-0.36%</td>
+												<td data-title="Open" class="text-right">$1.39</td>
+												<td data-title="High" class="text-right ">$1.39</td>
+												<td data-title="Low" class="text-right ">$1.38</td>
+												<td data-title="Volume" class="text-right">9,395</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">AAD</td>
+												<td data-title="Company" class="text-right">ARDENT LEISURE GROUP</td>
+												<td data-title="Price" class="text-right">$1.15</td>
+												<td data-title="Change" class="text-right ">  +0.02</td>
+												<td data-title="Change %" class="text-right">1.32%</td>
+												<td data-title="Open" class="text-right">$1.14</td>
+												<td data-title="High" class="text-right ">$1.15</td>
+												<td data-title="Low" class="text-right ">$1.13</td>
+												<td data-title="Volume" class="text-right">56,431</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">AAX</td>
+												<td data-title="Company" class="text-right">AUSENCO LIMITED</td>
+												<td data-title="Price" class="text-right">$4.00</td>
+												<td data-title="Change" class="text-right ">-0.04</td>
+												<td data-title="Change %" class="text-right">-0.99%</td>
+												<td data-title="Open" class="text-right">$4.01</td>
+												<td data-title="High" class="text-right ">$4.05</td>
+												<td data-title="Low" class="text-right ">$4.00</td>
+												<td data-title="Volume" class="text-right">90,641</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">ABC</td>
+												<td data-title="Company" class="text-right">ADELAIDE BRIGHTON LIMITED</td>
+												<td data-title="Price" class="text-right">$3.00</td>
+												<td data-title="Change" class="text-right ">  +0.06</td>
+												<td data-title="Change %" class="text-right">2.04%</td>
+												<td data-title="Open" class="text-right">$2.98</td>
+												<td data-title="High" class="text-right ">$3.00</td>
+												<td data-title="Low" class="text-right ">$2.96</td>
+												<td data-title="Volume" class="text-right">862,518</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">ABP</td>
+												<td data-title="Company" class="text-right">ABACUS PROPERTY GROUP</td>
+												<td data-title="Price" class="text-right">$1.91</td>
+												<td data-title="Change" class="text-right ">0.00</td>
+												<td data-title="Change %" class="text-right">0.00%</td>
+												<td data-title="Open" class="text-right">$1.92</td>
+												<td data-title="High" class="text-right ">$1.93</td>
+												<td data-title="Low" class="text-right ">$1.90</td>
+												<td data-title="Volume" class="text-right">595,701</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">ABY</td>
+												<td data-title="Company" class="text-right">ADITYA BIRLA MINERALS LIMITED</td>
+												<td data-title="Price" class="text-right">$0.77</td>
+												<td data-title="Change" class="text-right ">  +0.02</td>
+												<td data-title="Change %" class="text-right">2.00%</td>
+												<td data-title="Open" class="text-right">$0.76</td>
+												<td data-title="High" class="text-right ">$0.77</td>
+												<td data-title="Low" class="text-right ">$0.76</td>
+												<td data-title="Volume" class="text-right">54,567</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">ACR</td>
+												<td data-title="Company" class="text-right">ACRUX LIMITED</td>
+												<td data-title="Price" class="text-right">$3.71</td>
+												<td data-title="Change" class="text-right ">  +0.01</td>
+												<td data-title="Change %" class="text-right">0.14%</td>
+												<td data-title="Open" class="text-right">$3.70</td>
+												<td data-title="High" class="text-right ">$3.72</td>
+												<td data-title="Low" class="text-right ">$3.68</td>
+												<td data-title="Volume" class="text-right">191,373</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">ADU</td>
+												<td data-title="Company" class="text-right">ADAMUS RESOURCES LIMITED</td>
+												<td data-title="Price" class="text-right">$0.72</td>
+												<td data-title="Change" class="text-right ">0.00</td>
+												<td data-title="Change %" class="text-right">0.00%</td>
+												<td data-title="Open" class="text-right">$0.73</td>
+												<td data-title="High" class="text-right ">$0.74</td>
+												<td data-title="Low" class="text-right ">$0.72</td>
+												<td data-title="Volume" class="text-right">8,602,291</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">AGG</td>
+												<td data-title="Company" class="text-right">ANGLOGOLD ASHANTI LIMITED</td>
+												<td data-title="Price" class="text-right">$7.81</td>
+												<td data-title="Change" class="text-right ">-0.22</td>
+												<td data-title="Change %" class="text-right">-2.74%</td>
+												<td data-title="Open" class="text-right">$7.82</td>
+												<td data-title="High" class="text-right ">$7.82</td>
+												<td data-title="Low" class="text-right ">$7.81</td>
+												<td data-title="Volume" class="text-right">148</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">AGK</td>
+												<td data-title="Company" class="text-right">AGL ENERGY LIMITED</td>
+												<td data-title="Price" class="text-right">$13.82</td>
+												<td data-title="Change" class="text-right ">  +0.02</td>
+												<td data-title="Change %" class="text-right">0.14%</td>
+												<td data-title="Open" class="text-right">$13.83</td>
+												<td data-title="High" class="text-right ">$13.83</td>
+												<td data-title="Low" class="text-right ">$13.67</td>
+												<td data-title="Volume" class="text-right">846,403</td>
+											</tr>
+											<tr>
+												<td data-title="Code" class="text-right">AGO</td>
+												<td data-title="Company" class="text-right">ATLAS IRON LIMITED</td>
+												<td data-title="Price" class="text-right">$3.17</td>
+												<td data-title="Change" class="text-right ">-0.02</td>
+												<td data-title="Change %" class="text-right">-0.47%</td>
+												<td data-title="Open" class="text-right">$3.11</td>
+												<td data-title="High" class="text-right ">$3.22</td>
+												<td data-title="Low" class="text-right ">$3.10</td>
+												<td data-title="Volume" class="text-right">5,416,303</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</div>
+					</div>
+					<!-- end: page -->
+				</section>
+				
+				
+				<section role="main" class="content-body tab-menu-opened" style="padding:0;margin-top:25px;">
+					<!-- start: page -->
+					<div class="row">
+						<div class="col">
+							<section class="card">
+								<div class="card-body">
+									
+									<div class="col-xs-12">
+										<img src="media_library/contoh_grafik.png" class="img-responsive" style="max-width:100%;height:auto;"/>
+									</div>
+									
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+			<aside id="sidebar-right" class="sidebar-right">
+				<div class="nano">
+					<div class="nano-content">
+						<a href="#" class="mobile-close d-md-none">
+						Collapse <i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="sidebar-right-wrapper">
+							<div class="sidebar-widget widget-calendar">
+								<h6>Upcoming Tasks</h6>
+								<div data-plugin-datepicker data-plugin-skin="dark"></div>
+								<ul>
+									<li>
+										<time datetime="2017-04-19T00:00+00:00">04/19/2017</time>
+										<span>Company Meeting</span>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-widget widget-friends">
+								<h6>Friends</h6>
+								<ul>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<!-- Vendor -->
+		<script src="MASTER/vendor/jquery/jquery.js"></script>
+		<script src="MASTER/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="MASTER/vendor/popper/umd/popper.min.js"></script>
+		<script src="MASTER/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="MASTER/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="MASTER/vendor/common/common.js"></script>
+		<script src="MASTER/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="MASTER/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="MASTER/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		<!-- Specific Page Vendor -->
+		<script src="MASTER/vendor/select2/js/select2.js"></script>
+		<script src="MASTER/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+		<script src="MASTER/vendor/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/dataTables.buttons.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.bootstrap4.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.html5.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.print.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/JSZip-2.5.0/jszip.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/pdfmake-0.1.32/pdfmake.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/pdfmake-0.1.32/vfs_fonts.js"></script>
+		<!-- Theme Base, Components and Settings -->
+		<script src="MASTER/js/theme.js"></script>
+		<!-- Theme Custom -->
+		<script src="MASTER/js/custom.js"></script>
+		<!-- Theme Initialization Files -->
+		<script src="MASTER/js/theme.init.js"></script>
+		<!-- Examples -->
+		<script src="MASTER/js/examples/examples.datatables.default.js"></script>
+		<script src="MASTER/js/examples/examples.datatables.row.with.details.js"></script>
+		<script src="MASTER/js/examples/examples.datatables.tabletools.js"></script>
+		<script src="MASTER/js/examples/examples.modals.js"></script>
+	</body>
+</html>
