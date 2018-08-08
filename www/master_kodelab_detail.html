@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic -->
 		<meta charset="UTF-8">
-		<title>Master Barang</title>
+		<title>Master Kode Lab Detail</title>
 		<meta name="keywords" content="HTML5 Admin Template" />
 		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
@@ -92,14 +92,15 @@
 								</section>
 							</div>
 						</li>
+						
 						<li>
 							<a href="dashboard.html" class="dropdown-toggle notification-icon">
-							<i class="fas fa-chart-pie"></i>
+								<i class="fas fa-chart-pie"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
-							<i class="fas fa-bell"></i>
+								<i class="fas fa-bell"></i>
 							</a>
 						</li>
 					</ul>
@@ -202,185 +203,88 @@
 				</div>
 				<!-- end: sidebar -->
 				<div>
-					<button class="btn btn-primary" style="width:100%;margin-bottom:15px;" onclick="window.location='master_barang_detail.html'">Input Data</button>
+					<button class="btn btn-primary" style="width:100%;margin-bottom:15px;">Input N Rujukan</button>
 				</div>
+				
 				<section role="main" class="content-body tab-menu-opened" style="padding:0;">
 					<!-- start: page -->
 					<div class="row">
 						<div class="col">
 							<section class="card">
-								<header class="card-header">
-									<h2 class="card-title">Master Data Barang</h2>
-								</header>
-								<div style="margin:0 auto;text-align:center;" id="loading_table">
-									<img src="media_library/loading.gif" style="margin:0 auto;text-align:center;max-width:100px;width:100%;height:auto;" class="img-responsive" />
-								</div>
-								<div class="card-body" id="display_table" style="display:none;">
-									<table class="table table-bordered table-striped mb-0" id="datatable-default">
+								<div class="card-body">
+									<table class="table table-no-more table-bordered table-striped mb-0">
 										<thead>
-											<tr role="row">
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 22px;">No.</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 122px;">Nama Barang</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 49px;">Katalog</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 70px;">Kategori</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 41px;">Status</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 46px;">Rumah Sakit</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 44px;">Opsi</th>
+											<tr>
+												<th class="text-right">Pemeriksaan</th>
+												<th class="text-right">Hasil</th>
+												<th class="text-right">N Rujukan</th>
+												<th class="text-right">Satuan</th>
+												<th class="text-right">Opsi</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr role="row" class="odd">
-												<td>1</td>
-												<td>MAXTER EXAM GLOVE M (50,0,1)                                                                        </td>
-												<td>1001 </td>
-												<td></td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/1">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=1">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=1/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-															<!-- Modal Animation -->
-															<div id="konfirmasihapusdata" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
-																<section class="card">
-																	<header class="card-header">
-																		<h2 class="card-title">Hapus data?</h2>
-																	</header>
-																	<div class="card-body">
-																		<div class="modal-wrapper">
-																			<div class="modal-icon">
-																				<i class="fas fa-question-circle"></i>
-																			</div>
-																			<div class="modal-text" style="margin-top:-8px;">
-																				<p class="mb-0">Apakah Anda yakin ingin menghapus data ini?</p>
-																			</div>
-																		</div>
-																	</div>
-																	<footer class="card-footer">
-																		<div class="row">
-																			<div class="col-md-12 text-right">
-																				<button class="btn btn-primary modal-confirm">Ya</button>
-																				<button class="btn btn-default modal-dismiss">Batal</button>
-																			</div>
-																		</div>
-																	</footer>
-																</section>
-															</div>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
+											<tr>
+												<td data-title="Nama" class="text-right">Hemoglobin</td>
+												<td data-title="Metoda" class="text-right"></td>
+												<td data-title="Grup" class="text-right">HEMATOLOGI</td>
+												<td data-title="Status" class="text-right">1</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</div>
+					</div>
+					<!-- end: page -->
+				</section>
+				<section role="main" class="content-body tab-menu-opened" style="padding:0;margin-top:25px;">
+					<!-- start: page -->
+					<div class="row">
+						<div class="col">
+							<section class="card">
+								<div class="card-body">
+									<table class="table table-no-more table-bordered table-striped mb-0">
+										<thead>
+											<tr>
+												<th class="text-right">Jenis Kelamin</th>
+												<th class="text-right">Usia Awal</th>
+												<th class="text-right">Usia Akhir</th>
+												<th class="text-right">Satuan</th>
+												<th class="text-right">N Rujukan</th>
+												<th class="text-right">Keterangan</th>
+												<th class="text-right">Status</th>
+												<th class="text-right">Opsi</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-title="Jenis Kelamin" class="text-right">P</td>
+												<td data-title="Usia Awal" class="text-right">1.00</td>
+												<td data-title="Usia Akhir" class="text-right">99.00</td>
+												<td data-title="Satuan" class="text-right">Tahun</td>
+												<td data-title="N Rujukan" class="text-right">12 - 16</td>
+												<td data-title="Keterangan" class="text-right">PEREMPUAN</td>
+												<td data-title="Status" class="text-right">1</td>
+												<td data-title="Opsi" class="text-right">
+													<div class="btn-group">
+														<a class="btn btn-sm btn-default" href="http://localhost/development_site/osh/public/settings/nrujukan/416/edit">Edit</a>
+														<a class="btn btn-sm btn-delete btn-danger" href="javascript:;" data-message="Anda akan menghapus data. Anda yakin?">Delete</a>
+													</div>
 												</td>
 											</tr>
-											<tr role="row" class="even">
-												<td>2</td>
-												<td>TENSI DIG OMRON SEM-1 (42.1487,0,1)                                                                 </td>
-												<td>2000 </td>
-												<td></td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/2">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=2">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=1/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>3</td>
-												<td>123                                                                                                 </td>
-												<td>1    </td>
-												<td>                        Spuit                                             
-												</td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/14">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=14">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=14/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>4</td>
-												<td></td>
-												<td></td>
-												<td></td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/5">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=5">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=5/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>5</td>
-												<td>tes                                                                                                 </td>
-												<td>1004 </td>
-												<td></td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/4">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=4">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=4/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>6</td>
-												<td>TEST KEHAMILAN STR ONEMED-50 STR (75,0,1)                                                           </td>
-												<td>1002 </td>
-												<td>                        Alat Laboratorium                                 
-												</td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/3">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=3">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=3/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
+											<tr>
+												<td data-title="Jenis Kelamin" class="text-right">L</td>
+												<td data-title="Usia Awal" class="text-right">1.00</td>
+												<td data-title="Usia Akhir" class="text-right">99.00</td>
+												<td data-title="Satuan" class="text-right">Tahun</td>
+												<td data-title="N Rujukan" class="text-right">14 - 18</td>
+												<td data-title="Keterangan" class="text-right">LAKI LAKI</td>
+												<td data-title="Status" class="text-right">1</td>
+												<td data-title="Opsi" class="text-right">
+													<div class="btn-group">
+														<a class="btn btn-sm btn-default" href="http://localhost/development_site/osh/public/settings/nrujukan/416/edit">Edit</a>
+														<a class="btn btn-sm btn-delete btn-danger" href="javascript:;" data-message="Anda akan menghapus data. Anda yakin?">Delete</a>
+													</div>
 												</td>
 											</tr>
 										</tbody>
@@ -391,6 +295,9 @@
 					</div>
 					<!-- end: page -->
 				</section>
+				
+				
+				
 			</div>
 			<aside id="sidebar-right" class="sidebar-right">
 				<div class="nano">
@@ -487,13 +394,5 @@
 		<script src="MASTER/js/examples/examples.datatables.row.with.details.js"></script>
 		<script src="MASTER/js/examples/examples.datatables.tabletools.js"></script>
 		<script src="MASTER/js/examples/examples.modals.js"></script>
-		<script>
-			setTimeout(loadTable, 3000)
-			
-			function loadTable(){
-				document.getElementById('loading_table').style.display = "none";
-				document.getElementById('display_table').style.display = "block";
-			}
-		</script>
 	</body>
 </html>

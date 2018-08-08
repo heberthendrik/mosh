@@ -1,0 +1,2170 @@
+<!doctype html>
+<html class="has-tab-navigation sidebar-light">
+	<head>
+		<!-- Basic -->
+		<meta charset="UTF-8">
+		<title>Master Kode Lab</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="MASTER/vendor/animate/animate.css">
+		<link rel="stylesheet" href="MASTER/vendor/font-awesome/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="MASTER/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="MASTER/vendor/jquery-ui/jquery-ui.css" />
+		<link rel="stylesheet" href="MASTER/vendor/jquery-ui/jquery-ui.theme.css" />
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+		<link rel="stylesheet" href="MASTER/vendor/morris/morris.css" />
+		<link rel="stylesheet" href="MASTER/vendor/select2/css/select2.css" />
+		<link rel="stylesheet" href="MASTER/vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />
+		<link rel="stylesheet" href="MASTER/vendor/datatables/media/css/dataTables.bootstrap4.css" />
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="MASTER/css/theme.css" />
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="MASTER/css/skins/default.css" />
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="MASTER/css/custom.css">
+		<!-- Head Libs -->
+		<script src="MASTER/vendor/modernizr/modernizr.js"></script>
+		<style>
+			div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+			justify-content:center;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="body">
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="#" class="logo">
+					<img src="media_library/logo_top.png" width="120" height="35" alt="Porto Admin" />
+					</a>
+					<div class="d-md-none toggle-menu" data-toggle="collapse" data-target=".tab-navigation">
+						<i class="fas fa-bars" aria-label="Toggle Menu"></i>
+					</div>
+				</div>
+				<!-- start: search & user box -->
+				<div class="header-right">
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group">
+							<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+							<span class="input-group-append">
+							<button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+					<span class="separator"></span>
+					<ul class="notifications">
+						<li>
+							<a href="#modalAnim" class="modal-with-zoom-anim ws-normal dropdown-toggle notification-icon" data-toggle="dropdown">
+							<i class="fas fa-chart-line"></i>
+							</a>
+							<!-- Modal Primary -->
+							<div id="modalAnim" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
+								<section class="card">
+									<header class="card-header" style="background:#dc1b30;">
+										<h2 class="card-title" style="color:#fff">Pilih Data Report</h2>
+									</header>
+									<div class="card-body">
+										<div class="modal-wrapper">
+											<div class="modal-text">
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='hasil_lab.html'">Hasil Lab</button>
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='rekaptulasi.html'">Rekaptulasi</button>
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='kunjungan_per_ruang.html'">Kunjungan Per Ruang</button>
+											</div>
+										</div>
+									</div>
+									<footer class="card-footer">
+										<div class="row">
+											<div class="col-md-12 text-right">
+												<button class="btn btn-primary modal-dismiss" style="width:100%;border:none;">Kembali</button>
+											</div>
+										</div>
+									</footer>
+								</section>
+							</div>
+						</li>
+						<li>
+							<a href="dashboard.html" class="dropdown-toggle notification-icon">
+							<i class="fas fa-chart-pie"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+							<i class="fas fa-bell"></i>
+							</a>
+						</li>
+					</ul>
+					<span class="separator"></span>
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="MASTER/img/!logged-user.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="MASTER/img/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name">Hebert Hendrik</span>
+								<span class="role">administrator</span>
+							</div>
+							<i class="fa custom-caret"></i>
+						</a>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled mb-2">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="my_profile.html"><i class="fas fa-user"></i> My Profile</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="logout.html"><i class="fas fa-power-off"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<div class="tab-navigation collapse">
+					<nav>
+						<ul class="nav nav-pills">
+							<li class="nav-active">
+								<a class="nav-link" href="dashboard.html" style="color:#fff;">
+								<i class="fas fa-home" aria-hidden="true"></i>Dashboard
+								</a>    
+							</li>
+							<li>
+								<a class="nav-link" href="hasil_lab.html" style="color:#fff;">
+								<i class="fas fa-chart-pie" aria-hidden="true"></i>Hasil Lab
+								</a>    
+							</li>
+							<li class="dropdown">
+								<a class="nav-link dropdown-toggle" style="color:#fff;">
+								<i class="fas fa-tasks" aria-hidden="true"></i>Report
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a class="nav-link" href="rekaptulasi.html">Rekaptulasi</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link" href="kunjungan_per_ruang.html">Kunjungan per Ruang</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="nav-link dropdown-toggle" style="color:#fff;"><i class="fas fa-copy" aria-hidden="true"></i>Admin Panel</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_ruang.html">Ruang</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_kelas.html">Kelas</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_status.html">Status</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_dokter.html">Dokter</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_petugas.html">Petugas</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_barang.html">Barang</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_pasien.html">Pasien</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_kodelab.html">Kode Lab</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_rumahsakit.html">Rumah Sakit</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_user.html">User</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_slider.html">Slider</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end: sidebar -->
+				<div>
+					<button class="btn btn-primary" style="width:100%;margin-bottom:15px;" onclick="window.location='master_kodelab_detail.html'">Input Data</button>
+				</div>
+				<section role="main" class="content-body tab-menu-opened" style="padding:0;">
+					<!-- start: page -->
+					<div class="row">
+						<div class="col">
+							<section class="card">
+								<header class="card-header">
+									<h2 class="card-title">Master Data Kode Lab</h2>
+								</header>
+								<div style="margin:0 auto;text-align:center;" id="loading_table">
+									<img src="media_library/loading.gif" style="margin:0 auto;text-align:center;max-width:100px;width:100%;height:auto;" class="img-responsive" />
+								</div>
+								<div class="card-body" id="display_table" style="display:none;">
+									<table class="table table-bordered table-striped mb-0" id="datatable-default">
+										<thead>
+											<tr role="row">
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 22px;">No.</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 103px;">Nama</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 123px;">Grup</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 116px;">Metoda</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 41px;">Status</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 44px;">Opsi</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr role="row" class="odd">
+												<td>1</td>
+												<td>Hemoglobin                                                                                          </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>                                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=5">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_kodelab_detail.html?klid=5">View</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_kodelab_detail.html?klid=5/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+															<!-- Modal Animation -->
+															<div id="konfirmasihapusdata" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
+																<section class="card">
+																	<header class="card-header">
+																		<h2 class="card-title">Hapus data?</h2>
+																	</header>
+																	<div class="card-body">
+																		<div class="modal-wrapper">
+																			<div class="modal-icon">
+																				<i class="fas fa-question-circle"></i>
+																			</div>
+																			<div class="modal-text" style="margin-top:-8px;">
+																				<p class="mb-0">Apakah Anda yakin ingin menghapus data ini?</p>
+																			</div>
+																		</div>
+																	</div>
+																	<footer class="card-footer">
+																		<div class="row">
+																			<div class="col-md-12 text-right">
+																				<button class="btn btn-primary modal-confirm">Ya</button>
+																				<button class="btn btn-default modal-dismiss">Batal</button>
+																			</div>
+																		</div>
+																	</footer>
+																</section>
+															</div>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>2</td>
+												<td>HCT                                                                                                 </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>Analyzer Calculates                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=12">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=12">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=12/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>3</td>
+												<td>PLT                                                                                                 </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>Impedance                                                                                           </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=13">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=13">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=13/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>4</td>
+												<td>RDW-CV                                                                                              </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=14">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=14">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=14/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>5</td>
+												<td>Hasil PT                                                                                            </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>Nephelometri                                                                                        </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=101">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=101">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=101/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>6</td>
+												<td>INR                                                                                                 </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>Nephelometri                                                                                        </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=102">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=102">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=102/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>7</td>
+												<td>Control Normal PT                                                                                   </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>Nephelometri                                                                                        </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=103">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=103">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=103/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>8</td>
+												<td>APTT                                                                                                </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td>Optical                                                                                             </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=105">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=105">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=105/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>9</td>
+												<td>Natrium                                                                                             </td>
+												<td>ELEKTROLIT                                                                                          </td>
+												<td>ISE                                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=106">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=106">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=106/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>10</td>
+												<td>Kalium                                                                                              </td>
+												<td>ELEKTROLIT                                                                                          </td>
+												<td>ISE                                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=107">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=107">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=107/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>11</td>
+												<td>Chlorida                                                                                            </td>
+												<td>KIMIA                                                                                               </td>
+												<td>ISE                                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=108">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=108">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=108/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>12</td>
+												<td>Free PSA                                                                                            </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>2-step EIA sandwich + ELFA                                                                          </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=109">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=109">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=109/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>13</td>
+												<td>CEA                                                                                                 </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>2-step EIA + ELFA                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=110">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=110">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=110/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>14</td>
+												<td>SI                                                                                                  </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=111">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=111">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=111/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>15</td>
+												<td>TIBC                                                                                                </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=112">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=112">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=112/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>16</td>
+												<td>ST                                                                                                  </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=113">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=113">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=113/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>17</td>
+												<td>Feritin                                                                                             </td>
+												<td>KIMIA                                                                                               </td>
+												<td>1 step EIA Sandwich + ELFA                                                                          </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=114">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=114">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=114/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>18</td>
+												<td>Free T3                                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>EIA Competition + ELFA                                                                              </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=115">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=115">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=115/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>19</td>
+												<td>Free T4                                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>EIA Competition + ELFA                                                                              </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=116">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=116">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=116/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>20</td>
+												<td>TSH                                                                                                 </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=117">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=117">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=117/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>21</td>
+												<td>Salmonella Typhi O                                                                                  </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=118">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=118">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=118/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>22</td>
+												<td>Salmonella Typhi H                                                                                  </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=119">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=119">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=119/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>23</td>
+												<td>Salmonella Paratyphi AO                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=120">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=120">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=120/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>24</td>
+												<td>Salmonella Paratyphi AH                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=121">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=121">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=121/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>25</td>
+												<td>Salmonella Paratyphi BO                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=122">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=122">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=122/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>26</td>
+												<td>Salmonella Paratyphi BH                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=123">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=123">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=123/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>27</td>
+												<td>Salmonella Paratyphi CO                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=124">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=124">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=124/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>28</td>
+												<td>Salmonella Paratyphi CH                                                                             </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=125">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=125">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=125/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>29</td>
+												<td>C-Reaktif Protein                                                                                   </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>Latex Agglutination                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=126">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=126">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=126/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>30</td>
+												<td>Rheumatoid Factor (Kualitatif)                                                                      </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>Latex Agglutination                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=127">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=127">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=127/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>31</td>
+												<td>ASTO                                                                                                </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>Latex Agglutination                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=128">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=128">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=128/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>32</td>
+												<td>VDRL                                                                                                </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>Latex Agglutination                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=129">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=129">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=129/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>33</td>
+												<td>HBs Ag  (kualitatif)                                                                                </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>ELFA                                                                                                </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=131">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=131">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=131/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>34</td>
+												<td>Anti HCV Total                                                                                      </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>ICT                                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=132">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=132">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=132/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>35</td>
+												<td>IgG Dengue                                                                                          </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>ICT                                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=134">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=134">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=134/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>36</td>
+												<td>IgM  Dengue                                                                                         </td>
+												<td>IMUNO-SEROLOGI                                                                                      </td>
+												<td>ICT                                                                                                 </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=135">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=135">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=135/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>37</td>
+												<td>Warna-Kekeruhan                                                                                     </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=136">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=136">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=136/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>38</td>
+												<td>BJ                                                                                                  </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=137">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=137">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=137/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>39</td>
+												<td>pH                                                                                                  </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=138">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=138">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=138/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>40</td>
+												<td>Keton                                                                                               </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=139">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=139">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=139/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>41</td>
+												<td>Protein                                                                                             </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=140">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=140">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=140/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>42</td>
+												<td>Glukosa                                                                                             </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=141">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=141">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=141/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>43</td>
+												<td>Bilirubin                                                                                           </td>
+												<td>FECES                                                                                               </td>
+												<td>                                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=142">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=142">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=142/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>44</td>
+												<td>Blood                                                                                               </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=143">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=143">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=143/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>45</td>
+												<td>Nitrit                                                                                              </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=144">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=144">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=144/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>46</td>
+												<td>Urobilinogen                                                                                        </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=145">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=145">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=145/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>47</td>
+												<td>Leukosit                                                                                            </td>
+												<td>URINALISA                                                                                           </td>
+												<td>Urinalysis Strips                                                                                   </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=146">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=146">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=146/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>48</td>
+												<td>Leukosit                                                                                            </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=147">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=147">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=147/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>49</td>
+												<td>Erythrosit                                                                                          </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=148">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=148">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=148/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>50</td>
+												<td>Silinder                                                                                            </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=149">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=149">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=149/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>51</td>
+												<td>Epithel                                                                                             </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=150">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=150">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=150/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>52</td>
+												<td>Bakteri                                                                                             </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=151">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=151">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=151/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>53</td>
+												<td>Kristal                                                                                             </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=152">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=152">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=152/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>54</td>
+												<td>Lain-lain                                                                                           </td>
+												<td>URINALISA (SEDIMEN)                                                                                 </td>
+												<td>Manual Mikroskop                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=153">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=153">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=153/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>55</td>
+												<td>Makroskopis Sputum BTA Pagi                                                                         </td>
+												<td>MIKROBIOLOGI                                                                                        </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=155">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=155">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=155/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>56</td>
+												<td>Makroskopis Sputum BTA Sewaktu.                                                                     </td>
+												<td>MIKROBIOLOGI                                                                                        </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=156">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=156">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=156/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>57</td>
+												<td>Mikroskopis Sputum BTA Sewaktu                                                                      </td>
+												<td>MIKROBIOLOGI                                                                                        </td>
+												<td>Pengecatan ZN                                                                                       </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=157">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=157">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=157/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>58</td>
+												<td>Mikroskopis Sputum BTA Pagi                                                                         </td>
+												<td>MIKROBIOLOGI                                                                                        </td>
+												<td>Pengecatan ZN                                                                                       </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=158">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=158">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=158/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>59</td>
+												<td>Viscositas Serum                                                                                    </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=161">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=161">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=161/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>60</td>
+												<td>Golongan Darah                                                                                      </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=163">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=163">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=163/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>61</td>
+												<td>Waktu Pembekuan (CT)                                                                                </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=164">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=164">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=164/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>62</td>
+												<td>Waktu Perdarahan ( BT )                                                                             </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=165">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=165">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=165/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>63</td>
+												<td>Masa Trombin                                                                                        </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=166">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=166">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=166/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>64</td>
+												<td>Eritrosit                                                                                           </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=167">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=167">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=167/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>65</td>
+												<td>Kesan                                                                                               </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=168">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=168">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=168/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>66</td>
+												<td>Saran                                                                                               </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=170">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=170">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=170/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>67</td>
+												<td>Trombosit                                                                                           </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=171">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=171">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=171/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>68</td>
+												<td>Mikrofilaria                                                                                        </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=172">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=172">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=172/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>69</td>
+												<td>Retraksi Bekuan                                                                                     </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=173">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=173">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=173/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>70</td>
+												<td>Rumple Leede                                                                                        </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=174">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=174">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=174/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>71</td>
+												<td>SEL LE                                                                                              </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=175">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=175">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=175/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>72</td>
+												<td>Blas                                                                                                </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=176">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=176">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=176/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>73</td>
+												<td>Partikel                                                                                            </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=177">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=177">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=177/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>74</td>
+												<td>Sedian dipulas                                                                                      </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=178">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=178">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=178/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>75</td>
+												<td>Sel Lemak                                                                                           </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=179">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=179">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=179/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>76</td>
+												<td>Thrombopoiesis                                                                                      </td>
+												<td>HEMATOLOGI                                                                                          </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=180">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=180">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=180/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>77</td>
+												<td>Eritrosit                                                                                           </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=181">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=181">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=181/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>78</td>
+												<td>Darah                                                                                               </td>
+												<td>FECES                                                                                               </td>
+												<td>                                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=182">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=182">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=182/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>79</td>
+												<td>Darah Samar Feces                                                                                   </td>
+												<td>FECES                                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=183">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=183">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=183/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>80</td>
+												<td>Lemak                                                                                               </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=184">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=184">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=184/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>81</td>
+												<td>Eritrosit                                                                                           </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=185">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=185">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=185/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>82</td>
+												<td>Leukosit                                                                                            </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=186">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=186">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=186/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>83</td>
+												<td>Sudan II                                                                                            </td>
+												<td>FECES                                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=187">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=187">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=187/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>84</td>
+												<td>Konsistensi                                                                                         </td>
+												<td>FECES                                                                                               </td>
+												<td>                                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=188">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=188">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=188/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>85</td>
+												<td>Amilum                                                                                              </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Lugol                                                                                     </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=189">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=189">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=189/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>86</td>
+												<td>Karbohidrat                                                                                         </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=190">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=190">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=190/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>87</td>
+												<td>Lendir                                                                                              </td>
+												<td>FECES                                                                                               </td>
+												<td>                                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=191">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=191">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=191/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>88</td>
+												<td>Amoeba                                                                                              </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=192">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=192">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=192/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>89</td>
+												<td>Sisa Pencernaan                                                                                     </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=193">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=193">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=193/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>90</td>
+												<td>Epithel                                                                                             </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=194">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=194">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=194/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>91</td>
+												<td>pH                                                                                                  </td>
+												<td>FECES                                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=195">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=195">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=195/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>92</td>
+												<td>Telur Cacing                                                                                        </td>
+												<td>FECES                                                                                               </td>
+												<td>Pewarnaan Eosin 2%                                                                                  </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=196">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=196">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=196/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>93</td>
+												<td>Warna                                                                                               </td>
+												<td>MIKROBIOLOGI                                                                                        </td>
+												<td>                                                                                                    </td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=197">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=197">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=197/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>94</td>
+												<td>Benzidin                                                                                            </td>
+												<td>FECES                                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=198">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=198">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=198/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>95</td>
+												<td>Sisa Makanan                                                                                        </td>
+												<td>FECES                                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=199">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=199">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=199/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>96</td>
+												<td>Glukosa Cairan                                                                                      </td>
+												<td>ANALISIS CAIRAN TUBUH                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=200">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=200">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=200/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>97</td>
+												<td>Kejernihan Cairan                                                                                   </td>
+												<td>ANALISIS CAIRAN TUBUH                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=201">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=201">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=201/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>98</td>
+												<td>Leksit Cairan                                                                                       </td>
+												<td>ANALISIS CAIRAN TUBUH                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=202">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=202">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=202/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="odd">
+												<td>99</td>
+												<td>MN Cairan                                                                                           </td>
+												<td>ANALISIS CAIRAN TUBUH                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=203">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=203">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=203/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+											<tr role="row" class="even">
+												<td>100</td>
+												<td>Pewarnaan ZN                                                                                        </td>
+												<td>ANALISIS CAIRAN TUBUH                                                                               </td>
+												<td></td>
+												<td>1</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_kodelab_detail.html?klid=205">
+														<input class="form-control" type="hidden" name="_method" value="DELETE">
+														<div class="btn-group">
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=205">View</a>
+															<a class="btn btn-sm btn-default" href="master_kodelab_detail.html?klid=205/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+														</div>
+														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+													</form>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</div>
+					</div>
+					<!-- end: page -->
+				</section>
+			</div>
+			<aside id="sidebar-right" class="sidebar-right">
+				<div class="nano">
+					<div class="nano-content">
+						<a href="#" class="mobile-close d-md-none">
+						Collapse <i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="sidebar-right-wrapper">
+							<div class="sidebar-widget widget-calendar">
+								<h6>Upcoming Tasks</h6>
+								<div data-plugin-datepicker data-plugin-skin="dark"></div>
+								<ul>
+									<li>
+										<time datetime="2017-04-19T00:00+00:00">04/19/2017</time>
+										<span>Company Meeting</span>
+									</li>
+								</ul>
+							</div>
+							<div class="sidebar-widget widget-friends">
+								<h6>Friends</h6>
+								<ul>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<!-- Vendor -->
+		<script src="MASTER/vendor/jquery/jquery.js"></script>
+		<script src="MASTER/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="MASTER/vendor/popper/umd/popper.min.js"></script>
+		<script src="MASTER/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="MASTER/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="MASTER/vendor/common/common.js"></script>
+		<script src="MASTER/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="MASTER/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="MASTER/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		<!-- Specific Page Vendor -->
+		<script src="MASTER/vendor/select2/js/select2.js"></script>
+		<script src="MASTER/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+		<script src="MASTER/vendor/datatables/media/js/dataTables.bootstrap4.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/dataTables.buttons.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.bootstrap4.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.html5.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/Buttons-1.4.2/js/buttons.print.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/JSZip-2.5.0/jszip.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/pdfmake-0.1.32/pdfmake.min.js"></script>
+		<script src="MASTER/vendor/datatables/extras/TableTools/pdfmake-0.1.32/vfs_fonts.js"></script>
+		<!-- Theme Base, Components and Settings -->
+		<script src="MASTER/js/theme.js"></script>
+		<!-- Theme Custom -->
+		<script src="MASTER/js/custom.js"></script>
+		<!-- Theme Initialization Files -->
+		<script src="MASTER/js/theme.init.js"></script>
+		<!-- Examples -->
+		<script src="MASTER/js/examples/examples.datatables.default.js"></script>
+		<script src="MASTER/js/examples/examples.datatables.row.with.details.js"></script>
+		<script src="MASTER/js/examples/examples.datatables.tabletools.js"></script>
+		<script src="MASTER/js/examples/examples.modals.js"></script>
+		<script>
+			setTimeout(loadTable, 3000)
+			
+			function loadTable(){
+				document.getElementById('loading_table').style.display = "none";
+				document.getElementById('display_table').style.display = "block";
+			}
+		</script>
+	</body>
+</html>

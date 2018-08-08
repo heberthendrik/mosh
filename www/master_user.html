@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic -->
 		<meta charset="UTF-8">
-		<title>Master Barang</title>
+		<title>Master User</title>
 		<meta name="keywords" content="HTML5 Admin Template" />
 		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
@@ -202,7 +202,7 @@
 				</div>
 				<!-- end: sidebar -->
 				<div>
-					<button class="btn btn-primary" style="width:100%;margin-bottom:15px;" onclick="window.location='master_barang_detail.html'">Input Data</button>
+					<button class="btn btn-primary" style="width:100%;margin-bottom:15px;" onclick="window.location='master_user_detail.html'">Input Data</button>
 				</div>
 				<section role="main" class="content-body tab-menu-opened" style="padding:0;">
 					<!-- start: page -->
@@ -210,7 +210,7 @@
 						<div class="col">
 							<section class="card">
 								<header class="card-header">
-									<h2 class="card-title">Master Data Barang</h2>
+									<h2 class="card-title">Master Data User</h2>
 								</header>
 								<div style="margin:0 auto;text-align:center;" id="loading_table">
 									<img src="media_library/loading.gif" style="margin:0 auto;text-align:center;max-width:100px;width:100%;height:auto;" class="img-responsive" />
@@ -219,31 +219,22 @@
 									<table class="table table-bordered table-striped mb-0" id="datatable-default">
 										<thead>
 											<tr role="row">
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 22px;">No.</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 122px;">Nama Barang</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 49px;">Katalog</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 70px;">Kategori</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 41px;">Status</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 46px;">Rumah Sakit</th>
-												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 44px;">Opsi</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 32px;">No.</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 122px;">Nama</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 221px;">Email</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 112px;">Opsi</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr role="row" class="odd">
 												<td>1</td>
-												<td>MAXTER EXAM GLOVE M (50,0,1)                                                                        </td>
-												<td>1001 </td>
-												<td></td>
-												<td>1</td>
+												<td>Admin Bumi Ayu</td>
+												<td>admin.bumiayu@example.net</td>
 												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/1">
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_user_detail.html?uid=3">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=1">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=1/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_user_detail.html?uid=3/edit">Edit</a>
 															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
 															<!-- Modal Animation -->
 															<div id="konfirmasihapusdata" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
@@ -272,114 +263,52 @@
 																</section>
 															</div>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+														<input class="form-control" type="hidden" name="_token" value="cRQxo1UbmnuoXIBgu8BOnN3g8hRwgC8tkrITzdKQ">
 													</form>
 												</td>
 											</tr>
 											<tr role="row" class="even">
 												<td>2</td>
-												<td>TENSI DIG OMRON SEM-1 (42.1487,0,1)                                                                 </td>
-												<td>2000 </td>
-												<td></td>
-												<td>1</td>
+												<td>Petugas Bumi Ayu</td>
+												<td>petugas.bumiayu@example.net</td>
 												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/2">
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_user_detail.html?uid=2">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=2">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=1/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_user_detail.html?uid=2/edit">Edit</a>
 															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+														<input class="form-control" type="hidden" name="_token" value="cRQxo1UbmnuoXIBgu8BOnN3g8hRwgC8tkrITzdKQ">
 													</form>
 												</td>
 											</tr>
 											<tr role="row" class="odd">
 												<td>3</td>
-												<td>123                                                                                                 </td>
-												<td>1    </td>
-												<td>                        Spuit                                             
-												</td>
-												<td>1</td>
+												<td>Dokter Bumi Ayu</td>
+												<td>dokter.bumiayu@example.net</td>
 												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/14">
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_user_detail.html?uid=4">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=14">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=14/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_user_detail.html?uid=4/edit">Edit</a>
 															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+														<input class="form-control" type="hidden" name="_token" value="cRQxo1UbmnuoXIBgu8BOnN3g8hRwgC8tkrITzdKQ">
 													</form>
 												</td>
 											</tr>
 											<tr role="row" class="even">
 												<td>4</td>
-												<td></td>
-												<td></td>
-												<td></td>
-												<td>1</td>
+												<td>Admin</td>
+												<td>admin@example.net</td>
 												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/5">
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="master_user_detail.html?uid=1">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=5">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=5/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_user_detail.html?uid=1/edit">Edit</a>
 															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>5</td>
-												<td>tes                                                                                                 </td>
-												<td>1004 </td>
-												<td></td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/4">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=4">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=4/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>6</td>
-												<td>TEST KEHAMILAN STR ONEMED-50 STR (75,0,1)                                                           </td>
-												<td>1002 </td>
-												<td>                        Alat Laboratorium                                 
-												</td>
-												<td>1</td>
-												<td>
-													RS. Aminah Bumiayu
-												</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/barang/3">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=3">View</a>
-															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_barang_detail.html?bid=3/edit">Edit</a>
-															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="i5G4igyWuPBNcEGz1dlUyKsgOANET76u3lZlvUuw">
+														<input class="form-control" type="hidden" name="_token" value="cRQxo1UbmnuoXIBgu8BOnN3g8hRwgC8tkrITzdKQ">
 													</form>
 												</td>
 											</tr>
