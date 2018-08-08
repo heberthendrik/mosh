@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="has-tab-navigation sidebar-light">
+	<head>
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Master Ruang Detail</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="MASTER/vendor/animate/animate.css">
+
+		<link rel="stylesheet" href="MASTER/vendor/font-awesome/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="MASTER/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="MASTER/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="MASTER/css/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="MASTER/css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="MASTER/css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="MASTER/vendor/modernizr/modernizr.js"></script>
+
+	</head>
+	<body>
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="#" class="logo">
+						<img src="media_library/logo_top.png" width="120" height="35" alt="Porto Admin" />
+					</a>
+					<div class="d-md-none toggle-menu" data-toggle="collapse" data-target=".tab-navigation">
+						<i class="fas fa-bars" aria-label="Toggle Menu"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group">
+							<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+							<span class="input-group-append">
+								<button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+			
+					<span class="separator"></span>
+			
+					<ul class="notifications">
+						<li>
+							<a href="#modalAnim" class="modal-with-zoom-anim ws-normal dropdown-toggle notification-icon" data-toggle="dropdown">
+							<i class="fas fa-chart-line"></i>
+							</a>
+							<!-- Modal Primary -->
+							<div id="modalAnim" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
+								<section class="card">
+									<header class="card-header" style="background:#dc1b30;">
+										<h2 class="card-title" style="color:#fff">Pilih Data Report</h2>
+									</header>
+									<div class="card-body">
+										<div class="modal-wrapper">
+											<div class="modal-text">
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='hasil_lab.html'">Hasil Lab</button>
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='rekaptulasi.html'">Rekaptulasi</button>
+												<button class="btn btn-default" style="width:100%;margin-bottom:10px;" onclick="window.location='kunjungan_per_ruang.html'">Kunjungan Per Ruang</button>
+											</div>
+										</div>
+									</div>
+									<footer class="card-footer">
+										<div class="row">
+											<div class="col-md-12 text-right">
+												<button class="btn btn-primary modal-dismiss" style="width:100%;border:none;">Kembali</button>
+											</div>
+										</div>
+									</footer>
+								</section>
+							</div>
+						</li>
+						
+						<li>
+							<a href="dashboard.html" class="dropdown-toggle notification-icon">
+							<i class="fas fa-chart-pie"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+							<i class="fas fa-bell"></i>
+							</a>
+						</li>
+					</ul>
+					<span class="separator"></span>
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="MASTER/img/!logged-user.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="MASTER/img/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name">Hebert Hendrik</span>
+								<span class="role">administrator</span>
+							</div>
+							<i class="fa custom-caret"></i>
+						</a>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled mb-2">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="my_profile.html"><i class="fas fa-user"></i> My Profile</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="logout.html"><i class="fas fa-power-off"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<div class="tab-navigation collapse">
+					<nav>
+						<ul class="nav nav-pills">
+							<li class="nav-active">
+								<a class="nav-link" href="dashboard.html" style="color:#fff;">
+								<i class="fas fa-home" aria-hidden="true"></i>Dashboard
+								</a>    
+							</li>
+							<li>
+								<a class="nav-link" href="hasil_lab.html" style="color:#fff;">
+								<i class="fas fa-chart-pie" aria-hidden="true"></i>Hasil Lab
+								</a>    
+							</li>
+							<li class="dropdown">
+								<a class="nav-link dropdown-toggle" style="color:#fff;">
+								<i class="fas fa-tasks" aria-hidden="true"></i>Report
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a class="nav-link" href="rekaptulasi.html">Rekaptulasi</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link" href="kunjungan_per_ruang.html">Kunjungan per Ruang</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="nav-link dropdown-toggle" style="color:#fff;"><i class="fas fa-copy" aria-hidden="true"></i>Admin Panel</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_ruang.html">Ruang</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_kelas.html">Kelas</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_status.html">Status</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_dokter.html">Dokter</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_petugas.html">Petugas</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_barang.html">Barang</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_pasien.html">Pasien</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_kodelab.html">Kode Lab</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_rumahsakit.html">Rumah Sakit</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_user.html">User</a>
+									</li>
+									<li class="dropdown-submenu">
+										<a class="nav-link dropdown-toggle" href="master_slider.html">Slider</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end: sidebar -->
+				
+				<section role="main" class="content-body card-margin" style="padding:0;">
+					<!-- start: page -->
+						<div class="row">
+							<div class="col">
+								<section class="card" style="margin:0;">
+									<div class="card-body">
+										<form class="form-horizontal form-bordered" method="get">
+											<div class="form-group row">
+												<label class="col-lg-3 control-label text-lg-right pt-2" for="inputDefault">Nama Ruang *</label>
+												<div class="col-lg-6">
+													<input type="text" class="form-control" id="inputDefault">
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-lg-3 control-label text-lg-right pt-2">Status *</label>
+												<div class="col-lg-6">
+													<select class="form-control mb-3">
+														<option>Option 1</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+											</div>
+											
+											<div class="form-group row">
+												<label class="col-lg-3 control-label text-lg-right pt-2">Rumah Sakit *</label>
+												<div class="col-lg-6">
+													<select class="form-control mb-3">
+														<option>Option 1</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+													</select>
+												</div>
+											</div>
+											
+											<button class="btn btn-primary" style="width:100%;margin-top:50px;">Simpan</button>
+											
+										</form>
+									</div>
+									
+										
+								</section>
+							</div>
+						</div>
+						
+					
+						
+					<!-- end: page -->
+				</section>
+			</div>
+
+			<aside id="sidebar-right" class="sidebar-right">
+				<div class="nano">
+					<div class="nano-content">
+						<a href="#" class="mobile-close d-md-none">
+							Collapse <i class="fas fa-chevron-right"></i>
+						</a>
+			
+						<div class="sidebar-right-wrapper">
+			
+							<div class="sidebar-widget widget-calendar">
+								<h6>Upcoming Tasks</h6>
+								<div data-plugin-datepicker data-plugin-skin="dark"></div>
+			
+								<ul>
+									<li>
+										<time datetime="2017-04-19T00:00+00:00">04/19/2017</time>
+										<span>Company Meeting</span>
+									</li>
+								</ul>
+							</div>
+			
+							<div class="sidebar-widget widget-friends">
+								<h6>Friends</h6>
+								<ul>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-online">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+									<li class="status-offline">
+										<figure class="profile-picture">
+											<img src="MASTER/img/!sample-user.jpg" alt="Joseph Doe" class="rounded-circle">
+										</figure>
+										<div class="profile-info">
+											<span class="name">Joseph Doe Junior</span>
+											<span class="title">Hey, how are you?</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+			
+						</div>
+					</div>
+				</div>
+			</aside>
+		</section>
+
+		<!-- Vendor -->
+		<script src="MASTER/vendor/jquery/jquery.js"></script>
+		<script src="MASTER/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="MASTER/vendor/popper/umd/popper.min.js"></script>
+		<script src="MASTER/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="MASTER/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="MASTER/vendor/common/common.js"></script>
+		<script src="MASTER/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="MASTER/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="MASTER/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Specific Page Vendor -->
+		<script src="MASTER/vendor/autosize/autosize.js"></script>
+		<script src="MASTER/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="MASTER/js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="MASTER/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="MASTER/js/theme.init.js"></script>
+
+	</body>
+</html>

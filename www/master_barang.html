@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic -->
 		<meta charset="UTF-8">
-		<title>Hasil Lab</title>
+		<title>Master Kelas</title>
 		<meta name="keywords" content="HTML5 Admin Template" />
 		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
@@ -92,14 +92,15 @@
 								</section>
 							</div>
 						</li>
+						
 						<li>
 							<a href="dashboard.html" class="dropdown-toggle notification-icon">
-								<i class="fas fa-chart-pie"></i>
+							<i class="fas fa-chart-pie"></i>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
-								<i class="fas fa-bell"></i>
+							<i class="fas fa-bell"></i>
 							</a>
 						</li>
 					</ul>
@@ -201,284 +202,111 @@
 					</nav>
 				</div>
 				<!-- end: sidebar -->
-				
+				<div>
+					<button class="btn btn-primary" style="width:100%;margin-bottom:15px;" onclick="window.location='master_ruang_detail.html'">Input Data</button>
+				</div>
 				<section role="main" class="content-body tab-menu-opened" style="padding:0;">
-				
-					
-				
 					<!-- start: page -->
 					<div class="row">
 						<div class="col">
 							<section class="card">
 								<header class="card-header">
-									<h2 class="card-title">Hasil Lab</h2>
+									<h2 class="card-title">Master Data Kelas</h2>
 								</header>
-								<div class="card-body">
+								
+								<div style="margin:0 auto;text-align:center;" id="loading_table">
+									<img src="media_library/loading.gif" style="margin:0 auto;text-align:center;max-width:100px;width:100%;height:auto;" class="img-responsive" />
+								</div>
+								
+								<div class="card-body" id="display_table" style="display:none;">
 									<table class="table table-bordered table-striped mb-0" id="datatable-default">
 										<thead>
 											<tr role="row">
-												<th>Tanggal</th>
-												<th>No. Lab</th>
-												<th>No. Rekam Medis</th>
-												<th>Nama</th>
-												<th>Tanggal Lahir</th>
-												<th>Proses Validasi</th>
-												<th>Opsi</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 96px;">No.</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 284px;">Nama</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 142px;">Status</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 338px;">Rumah Sakit</th>
+												<th class="sorting_disabled" rowspan="1" colspan="1" style="width: 254px;">Opsi</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr role="row" class="odd">
-												<td>20 May 2018</td>
-												<td>1805200001</td>
-												<td>01010101  </td>
-												<td>Tes</td>
-												<td>                                20 May 1991
-												</td>
-												<td>1 / 1</td>
+												<td>1</td>
+												<td>Jamkesmas           </td>
+												<td>1</td>
 												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1805200001">
+													RS. Aminah Bumiayu
+												</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/kelas/11">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1805200001">View</a>
-															<a class="btn btn-sm btn-default" href="http://localhost/development_site/osh/public/result/getPrint/1805200001"><i class="fa fa-print"></i> Cetak</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_kelas_detail.html">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
+															<!-- Modal Animation -->
+															<div id="konfirmasihapusdata" class="zoom-anim-dialog modal-block modal-block-primary mfp-hide">
+																<section class="card">
+																	<header class="card-header">
+																		<h2 class="card-title">Hapus data?</h2>
+																	</header>
+																	<div class="card-body">
+																		<div class="modal-wrapper">
+																			<div class="modal-icon">
+																				<i class="fas fa-question-circle"></i>
+																			</div>
+																			<div class="modal-text" style="margin-top:-8px;">
+																				<p class="mb-0">Apakah Anda yakin ingin menghapus data ini?</p>
+																			</div>
+																		</div>
+																	</div>
+																	<footer class="card-footer">
+																		<div class="row">
+																			<div class="col-md-12 text-right">
+																				<button class="btn btn-primary modal-confirm">Ya</button>
+																				<button class="btn btn-default modal-dismiss">Batal</button>
+																			</div>
+																		</div>
+																	</footer>
+																</section>
+															</div>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
+														<input class="form-control" type="hidden" name="_token" value="DJJNoGYWDf7WShrXeS7Uz3yoMHbadRFSasDdOahc">
 													</form>
 												</td>
 											</tr>
 											<tr role="row" class="even">
-												<td>06 April 2018</td>
-												<td>1804060001</td>
-												<td>727066014 </td>
-												<td>Muhammad Khalik Humar</td>
-												<td>                                29 April 2000
-												</td>
-												<td>0 / 0</td>
+												<td>2</td>
+												<td>Pribadi             </td>
+												<td>1</td>
 												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1804060001">
+													RS. Aminah Bumiayu
+												</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/kelas/12">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1804060001">View</a>
+															<a class="mb-1 mt-1 mr-1 ws-normal btn btn-sm btn-default" href="master_kelas_detail.html">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
+														<input class="form-control" type="hidden" name="_token" value="DJJNoGYWDf7WShrXeS7Uz3yoMHbadRFSasDdOahc">
 													</form>
 												</td>
 											</tr>
 											<tr role="row" class="odd">
-												<td>29 March 2018</td>
-												<td>1803290006</td>
-												<td>727066014 </td>
-												<td>Muhammad Khalik Humar</td>
-												<td>                                29 April 2000
-												</td>
-												<td>0 / 0</td>
+												<td>3</td>
+												<td>Jamkesmas           </td>
+												<td>1</td>
 												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803290006">
+													RS Omni Internasional
+												</td>
+												<td>
+													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="http://localhost/development_site/osh/public/settings/kelas/13">
 														<input class="form-control" type="hidden" name="_method" value="DELETE">
 														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803290006">View</a>
+															<a class="btn btn-sm btn-default" href="http://localhost/development_site/osh/public/settings/kelas/13/edit">Edit</a>
+															<a class="mb-1 mt-1 mr-1 modal-with-move-anim ws-normal btn btn-sm btn-delete btn-danger" href="#konfirmasihapusdata" >Delete</a>
 														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>29 March 2018</td>
-												<td>1803290005</td>
-												<td>727066013 </td>
-												<td>Habibi</td>
-												<td>                                10 October 1988
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803290005">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803290005">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>29 March 2018</td>
-												<td>1803290004</td>
-												<td>727066014 </td>
-												<td>Muhammad Khalik Humar</td>
-												<td>                                29 April 2000
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803290004">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803290004">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>29 March 2018</td>
-												<td>1803290003</td>
-												<td>727066014 </td>
-												<td>Muhammad Khalik Humar</td>
-												<td>                                29 April 2000
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803290003">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803290003">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>29 March 2018</td>
-												<td>1803290002</td>
-												<td>727066014 </td>
-												<td>Muhammad Khalik Humar</td>
-												<td>                                29 April 2000
-												</td>
-												<td>0 / 1</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803290002">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803290002">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>29 March 2018</td>
-												<td>1803290001</td>
-												<td>727066011 </td>
-												<td>Fadil Jati Perbawa</td>
-												<td>                                10 October 1987
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803290001">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803290001">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>28 March 2018</td>
-												<td>1803280002</td>
-												<td>727066011 </td>
-												<td>Fadil Jati Perbawa</td>
-												<td>                                10 October 1987
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803280002">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803280002">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>28 March 2018</td>
-												<td>1803280001</td>
-												<td>727066014 </td>
-												<td>Muhammad Khalik Humar</td>
-												<td>                                29 April 2000
-												</td>
-												<td>3 / 3</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803280001">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803280001">View</a>
-															<a class="btn btn-sm btn-default" href="http://localhost/development_site/osh/public/result/getPrint/1803280001"><i class="fa fa-print"></i> Cetak</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>12 March 2018</td>
-												<td>1803120001</td>
-												<td>727066012 </td>
-												<td>Zulkifli</td>
-												<td>                                03 November 1991
-												</td>
-												<td>16 / 16</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803120001">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803120001">View</a>
-															<a class="btn btn-sm btn-default" href="http://localhost/development_site/osh/public/result/getPrint/1803120001"><i class="fa fa-print"></i> Cetak</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>11 March 2018</td>
-												<td>1803110003</td>
-												<td>727066014 </td>
-												<td>Tes Pasien</td>
-												<td>                                02 November 2017
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803110003">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803110003">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="odd">
-												<td>11 February 2018</td>
-												<td>1803110004</td>
-												<td>727066014 </td>
-												<td>Tes Pasien</td>
-												<td>                                02 November 2017
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803110004">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803110004">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
-													</form>
-												</td>
-											</tr>
-											<tr role="row" class="even">
-												<td>11 February 2018</td>
-												<td>1803110001</td>
-												<td>727066014 </td>
-												<td>Tes Pasien</td>
-												<td>                                02 November 2017
-												</td>
-												<td>0 / 0</td>
-												<td>
-													<form accept-charset="utf-8" class="form-horizontal" method="POST" action="hasil_lab_detail.html?hid=1803110001">
-														<input class="form-control" type="hidden" name="_method" value="DELETE">
-														<div class="btn-group">
-															<a class="btn btn-sm btn-default" href="hasil_lab_detail.html?hid=1803110001">View</a>
-														</div>
-														<input class="form-control" type="hidden" name="_token" value="labsx9OqTLUbWzTBCw8oE4hOnC0nvvzVsRNeTiWV">
+														<input class="form-control" type="hidden" name="_token" value="DJJNoGYWDf7WShrXeS7Uz3yoMHbadRFSasDdOahc">
 													</form>
 												</td>
 											</tr>
@@ -586,5 +414,16 @@
 		<script src="MASTER/js/examples/examples.datatables.row.with.details.js"></script>
 		<script src="MASTER/js/examples/examples.datatables.tabletools.js"></script>
 		<script src="MASTER/js/examples/examples.modals.js"></script>
+		
+		<script>
+
+			setTimeout(loadTable, 3000)
+			
+			function loadTable(){
+				document.getElementById('loading_table').style.display = "none";
+				document.getElementById('display_table').style.display = "block";
+			}
+		</script>
+		
 	</body>
 </html>
